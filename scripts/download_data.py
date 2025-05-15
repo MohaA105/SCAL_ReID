@@ -1,7 +1,8 @@
 import os
 
-os.environ['KAGGLE_USERNAME'] = os.getenv('mohab107')
-os.environ['KAGGLE_KEY'] = os.getenv('f0537f7c68d48fe2b2626afed0f75605')
+os.environ['KAGGLE_USERNAME'] = os.getenv('KAGGLE_USERNAME')
+os.environ['KAGGLE_KEY'] = os.getenv('KAGGLE_KEY')
+
 
 from kaggle.api.kaggle_api_extended import KaggleApi
 
