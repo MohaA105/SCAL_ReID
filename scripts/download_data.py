@@ -1,9 +1,12 @@
 import os
+
+os.environ['KAGGLE_USERNAME'] = os.getenv('mohab107')
+os.environ['KAGGLE_KEY'] = os.getenv('f0537f7c68d48fe2b2626afed0f75605')
+
 from kaggle.api.kaggle_api_extended import KaggleApi
 
 def download_market1501():
     api = KaggleApi()                 
-    os.environ['KAGGLE_CONFIG_DIR'] = os.path.join(os.getcwd(), '.kaggle')
     api.authenticate()              
     api.dataset_download_files(
         'pengcw1/market-1501',        
