@@ -3,6 +3,7 @@ from kaggle.api.kaggle_api_extended import KaggleApi
 
 def download_market1501():
     api = KaggleApi()                 
+    os.environ['KAGGLE_CONFIG_DIR'] = os.path.join(os.getcwd(), '.kaggle')
     api.authenticate()              
     api.dataset_download_files(
         'pengcw1/market-1501',        
